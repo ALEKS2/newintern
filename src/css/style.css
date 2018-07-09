@@ -1,0 +1,74 @@
+
+.error{
+   color: #843534;
+   background-color:#f2dede;
+   padding: 1px;
+   width: 80%;
+   margin: auto;
+   font-size: 1.3rem;
+   border-radius: 5px;
+}
+.message{
+    color: #2b545c;
+    background-color: #dff0d8;
+    padding: 1px;
+    width: 80%;
+    margin: auto;
+    font-size: 1.3rem;
+    border-radius: 5px;
+}
+.message p, .error p, .primary-message p{
+    padding: 10px;
+    margin: 0;
+}
+.primary-message{
+    background-color: #d9edf7;
+    border-color: #bcdff1;
+    color: #31708f;
+    padding: 1px;
+    width: 50%;
+    margin: auto;
+    font-size: 1.3rem;
+}
+.mark-download-wrapper form{
+    display: flex;
+    justify-content: center;
+}
+.marks-download-btn{
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+    margin: 1rem 0;
+    font-size: 1.3rem;
+}
+.excel-trigger{
+    border-radius: 5px;
+    font-size: 1rem;
+    position: absolute;
+    right: 5px;
+    bottom: 0
+}
+.footer{
+    text-align: center;
+    width: 100%;
+    color: white;
+    margin-top: 1rem;
+    position: relative;
+    bottom: 0;
+    background-color: #1B5E20;
+    padding: 0.5rem;
+}
+.footer p{
+    margin: 0;
+}
+.container{
+    min-height: 95vh;
+}
+
+nav .pagination .page-item .page-link{
+    color: #5cb85c;
+}
+nav .pagination .page-item.active .page-link{
+    background-color: #5cb85c;
+    border-color: #5cb85c;
+    color: white;
+}

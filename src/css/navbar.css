@@ -1,0 +1,73 @@
+/* navbar
+============== */
+.mynavbar{
+    background-color: #00C853;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.mynavbar .mybrand{
+    text-decoration: none;
+    padding: 10px;
+    float: left;
+    color: white;
+    font-size: 25px;
+    font-style: italic;
+    text-shadow:rgba(255, 255, 255,0.49) 1px 1px 6px,
+    rgb(0, 0, 0) 2px 3px 30px;
+}
+.mynavbar .mynav{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.mynavbar .mynav-link{
+    list-style: none;
+    display: inline;
+}
+.mynavbar .mynav a{
+    text-decoration: none;
+    padding: 20px 10px;
+   display: inline-block;
+    color: #ffffff;
+    margin-left: -5px;
+}
+.mynavbar .mynav a:hover, .mynavbar .logout:hover{
+    text-decoration: none;
+    padding: 20px 10px;
+    display: inline-block;
+    /* color: #ee6041; */
+    color: #00C853;
+    background-color: white;
+    margin-left: -5px;
+}
+.mynavbar .mynav .myactive{
+    text-decoration: none;
+    padding: 20px 10px;
+    display: inline-block;
+    /* color: #ee6041; */
+    color: #00C853;
+    background-color: white;
+    margin-left: -5px;
+ } 
+.mynavbar .nav-toggler{
+    margin: 0;
+    float: right;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 5px;
+    display: none;
+}
+.mynavbar .logout{
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 20px 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: white;
+}

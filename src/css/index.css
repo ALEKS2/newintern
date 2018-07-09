@@ -1,0 +1,262 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    /* background-color: #E8F5E9; */
+    /* background-image: url('/intern/assets/images/45.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* landing page */
+.header{
+    height: 100vh;
+}
+.header .header-content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #00C853;
+    opacity: 0.9;
+}
+.header .header-content .btn{
+    border: 0;
+    padding: 1rem 2rem;
+    background-color: #B9F6CA;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background .4s ease-in, transform .2s ease-out;
+}
+.header .header-content .has-no-account p{
+    padding: 0 5px;
+    margin: 0;
+    display: inline-flex;
+}
+.header .header-content .has-no-account{
+    display: flex;
+    padding: 1rem;
+    font-size: 1.3rem;
+    color: white;
+    cursor: pointer;
+    transition: .2s ease-out;
+}
+.header .header-content .btn:hover{
+    border: 1px solid white;
+    padding: 1rem 2.5rem;
+    background-color: #00C853;
+    color: white;
+    transform: scale(1.2) rotateX(30deg);
+    
+}   
+.header .header-content .has-no-account:hover{
+    text-decoration: underline;
+    transform: scale(1.2) rotateX(25deg);
+}
+/* // landing page */
+
+/* overlay */
+.overlay{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    opacity: 0.5;
+    /* display: none; */
+}
+
+/* //overlay */
+
+/* login-modal */
+.modal-wrapper{
+    position: absolute;
+    left: 15%;
+    top: 0;
+    height: auto;
+    width: auto;
+}
+.modal{
+    /* padding: 1rem; */
+    width: 70vw;
+    margin: auto;
+    position: relative;
+    border: 5px solid #00C853;
+    background-color: white;
+    top: 30px;
+    max-height: 100vh;
+    animation: slideIn .8s linear, fadeIn .2s ease-in;
+}
+.modal .modal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.modal .modal-content .modal-header{
+    /* padding: 5px; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 2px solid #00C853;
+    align-items: center;
+}
+.modal .modal-content .modal-header h3{
+   margin: 0;
+}
+.modal .modal-content .login-header h3{
+    margin: 0;
+}
+.modal .modal-content .login-header{
+    width: 100%;
+}
+.modal .modal-content .login-header .login-nav{
+    margin: 5px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.modal .modal-content .login-header .login-nav li{
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: #00C853;
+    color: white;
+    border-radius: 5px;
+}
+.modal .modal-content .login-header .login-nav li:hover, .modal .modal-content .login-header .login-nav li:focus{
+    border: 1px solid white;
+}
+.modal .modal-content .login-header .active{
+    text-decoration: underline;
+}
+.modal .modal-content form{
+    padding: 1rem;
+}
+form .btn, button{
+    padding: 0.7rem 1rem;
+    border: 0;
+    cursor: pointer;
+}
+form .btn-success{
+    background-color: #00C853;
+    color: white;
+    border-radius: 4px;
+    /* margin-left: 90%; */
+}
+.btn-danger{
+    background-color: rgb(185, 51, 51);
+    color: white;
+    border-radius: 4px;
+}
+.close{
+    background-color: rgb(185, 51, 51);
+    color: white;
+    font-size: 1rem;
+}
+form{
+    width: 100%;
+}
+form .form-group{
+    padding: 0.5rem;
+    width: 80%;
+    margin: auto;
+}
+.login-modal form .form-control{
+    padding: 0.5rem;
+    width: 80%;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.login-modal form label{
+    display: block;
+    font-size: 1.3rem;
+}
+.modal h3{
+    font-size: 1.5rem;
+}
+.d-none{
+    display: none;
+}
+.modal-footer{
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    border-top: 2px solid #00C853;
+}
+.form-label{
+    text-align: center;
+    font-size: 1.3rem;
+}
+.reg-modal{
+    /* width: 70vh; */
+    font-size: 1.1rem;
+    animation: slideIn2 .8s linear, fadeIn .2s ease-in;
+}
+.reg-modal form .form-control{
+    width: 70%;
+    padding: 0.3rem;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.first-login{
+    color: #00C853;
+    padding: 1rem;
+    cursor: pointer;
+}
+.first-login:hover{
+    text-decoration: underline;
+    transform: scale(1.2) rotateX(25deg);
+}
+@keyframes slideIn {
+    0% {
+      transform: translateY(200px);
+      animation-timing-function: ease-out;
+    }
+    60% {
+      transform: translateY(-50px);
+      animation-timing-function: ease-in;
+    }
+    80% {
+      transform: translateY(10px);
+      animation-timing-function: ease-out;
+    }
+    100% {
+      transform: translateY(0);
+      animation-timing-function: ease-in;
+    }
+  }
+  @keyframes slideIn2 {
+    0% {
+      transform: translateY(100px);
+      animation-timing-function: ease-out;
+    }
+    60% {
+      transform: translateY(-50px);
+      animation-timing-function: ease-in;
+    }
+    80% {
+      transform: translateY(10px);
+      animation-timing-function: ease-out;
+    }
+    100% {
+      transform: translateY(0);
+      animation-timing-function: ease-in;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {opacity:0;}
+    to {opacity: 1;}
+  }
+
+  
+  
+/* //login-modal */

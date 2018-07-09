@@ -1,0 +1,1 @@
+.container{display:grid;grid-template-columns:1fr 1fr 1fr;grid-gap:1rem}.container .user_info{grid-column:1/2}.container .self_evaluation{grid-column:2/3}.container .company{grid-column:3/4}.error,.message{grid-column:1/4}h4{border-bottom:2px solid #0da847}
