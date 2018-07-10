@@ -1,4 +1,3 @@
-
 <?php
    class AccademicSupervisor{
     protected $first_name;

@@ -44,12 +44,6 @@ if (isset($_SESSION['admin'])) {
         <a href="index.php" class="active">Home</a>
       </li>
       <li class="mynav-link">
-          <a href="#" class="" id="add-supervisor-toggler">Add Supervisor</a>
-      </li>
-      <li class="mynav-link">
-          <a href="#" class="" id="add-student-toggler">Add Student</a>
-      </li>
-      <li class="mynav-link">
           <a href="marks.php" class="">Students Marks</a>
       </li>
       <?php if ($college_name != "education") {

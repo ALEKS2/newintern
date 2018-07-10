@@ -17,7 +17,7 @@ class Uploader{
             if(in_array($ext, $allowed)){
                 if($file_error === 0){
                     $file_new_name = 'excel'.'.'.$ext ;
-                    $file_destination = DESTINATION.'\\'.$file_new_name;
+                    $file_destination = DESTINATION.'/'.$file_new_name;
                     $move_file = move_uploaded_file($tmp_name, $file_destination);
                     if($move_file){
                         return $file_destination;
